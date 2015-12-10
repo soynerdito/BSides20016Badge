@@ -5535,6 +5535,9 @@ CONNECTOR</text>
 <wire x1="299.72" y1="243.84" x2="299.72" y2="210.82" width="0.1524" layer="94"/>
 <wire x1="299.72" y1="243.84" x2="345.44" y2="243.84" width="0.1524" layer="94"/>
 <wire x1="345.44" y1="243.84" x2="345.44" y2="210.82" width="0.1524" layer="94"/>
+<text x="398.78" y="139.7" size="2.54" layer="94">BSidesPR 2016 Led Matrix Badge</text>
+<text x="411.48" y="129.54" size="2.54" layer="94">BSidesPR2016SCH</text>
+<text x="477.52" y="129.54" size="2.54" layer="94">2</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="228.6" y="193.04" rot="R90"/>
@@ -5680,7 +5683,10 @@ CONNECTOR</text>
 <instance part="PROTO" gate="A" x="469.9" y="320.04"/>
 <instance part="PROTO1" gate="A" x="480.06" y="320.04"/>
 <instance part="FRAME1" gate="G$1" x="210.82" y="121.92"/>
-<instance part="FRAME1" gate="G$2" x="383.54" y="121.92"/>
+<instance part="FRAME1" gate="G$2" x="383.54" y="121.92" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="396.24" y="123.19" size="2.54" layer="94"/>
+<attribute name="SHEET" x="469.9" y="123.19" size="2.54" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
