@@ -6749,6 +6749,16 @@ CONNECTOR</text>
 <wire x1="414.02" y1="314.96" x2="406.4" y2="314.96" width="0.1524" layer="91"/>
 <label x="401.32" y="314.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="COLUMNS" gate="A" pin="VCC"/>
+<wire x1="467.36" y1="289.56" x2="472.44" y2="289.56" width="0.1524" layer="91"/>
+<label x="469.9" y="289.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ROWS" gate="A" pin="VCC"/>
+<wire x1="469.9" y1="251.46" x2="472.44" y2="251.46" width="0.1524" layer="91"/>
+<label x="469.9" y="251.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
