@@ -146,14 +146,6 @@
 <wire x1="4" y1="0" x2="96" y2="0" width="0" layer="20"/>
 <wire x1="96" y1="0" x2="100" y2="4" width="0" layer="20" curve="90"/>
 <wire x1="100" y1="4" x2="100" y2="46" width="0" layer="20"/>
-<rectangle x1="0" y1="48.895" x2="100.33" y2="53.34" layer="21"/>
-<rectangle x1="0" y1="-3.175" x2="100.33" y2="1.27" layer="21"/>
-<rectangle x1="98.425" y1="0" x2="102.87" y2="50.8" layer="21"/>
-<rectangle x1="-3.175" y1="0.635" x2="1.27" y2="51.435" layer="21"/>
-<rectangle x1="-0.991021875" y1="47.21450625" x2="5.993978125" y2="49.75450625" layer="21" rot="R45"/>
-<rectangle x1="93.623978125" y1="0.85950625" x2="100.608978125" y2="3.39950625" layer="21" rot="R45"/>
-<rectangle x1="94.70799375" y1="46.951478125" x2="101.69299375" y2="49.491478125" layer="21" rot="R135"/>
-<rectangle x1="-1.81200625" y1="-0.038521875" x2="5.17299375" y2="2.501478125" layer="21" rot="R135"/>
 <circle x="33.02" y="26.67" radius="3.175" width="0.8128" layer="21"/>
 <circle x="34.925" y="35.56" radius="3.175" width="0.8128" layer="21"/>
 <circle x="41.91" y="26.67" radius="3.175" width="0.8128" layer="21"/>
@@ -200,6 +192,22 @@ E</text>
 <wire x1="22.2" y1="34.8" x2="15.6" y2="34.8" width="0.254" layer="21"/>
 <rectangle x1="55.8" y1="45.6" x2="66" y2="48" layer="21"/>
 <text x="62.4" y="45" size="0.8128" layer="21" align="top-right">GND</text>
+<wire x1="100" y1="45.876896875" x2="100" y2="4.10365625" width="1.6764" layer="21"/>
+<wire x1="100" y1="4.10365625" x2="95.89634375" y2="0" width="1.6764" layer="21" curve="-90"/>
+<wire x1="95.89634375" y1="0" x2="4.024921875" y2="0" width="1.6764" layer="21"/>
+<wire x1="4.024921875" y1="0" x2="0" y2="4.024921875" width="1.6764" layer="21" curve="-90"/>
+<wire x1="0" y1="4.024921875" x2="0" y2="45.613659375" width="1.6764" layer="21"/>
+<wire x1="0" y1="45.613659375" x2="4.386340625" y2="50" width="1.6764" layer="21" curve="-90"/>
+<wire x1="4.386340625" y1="50" x2="95.876896875" y2="50" width="1.6764" layer="21"/>
+<wire x1="95.876896875" y1="50" x2="100" y2="45.876896875" width="1.6764" layer="21" curve="-90"/>
+<wire x1="100" y1="45.876896875" x2="100" y2="4.10365625" width="1.6764" layer="22"/>
+<wire x1="100" y1="4.10365625" x2="95.89634375" y2="0" width="1.6764" layer="22" curve="-90"/>
+<wire x1="95.89634375" y1="0" x2="4.024921875" y2="0" width="1.6764" layer="22"/>
+<wire x1="4.024921875" y1="0" x2="0" y2="4.024921875" width="1.6764" layer="22" curve="-90"/>
+<wire x1="0" y1="4.024921875" x2="0" y2="45.613659375" width="1.6764" layer="22"/>
+<wire x1="0" y1="45.613659375" x2="4.386340625" y2="50" width="1.6764" layer="22" curve="-90"/>
+<wire x1="4.386340625" y1="50" x2="95.876896875" y2="50" width="1.6764" layer="22"/>
+<wire x1="95.876896875" y1="50" x2="100" y2="45.876896875" width="1.6764" layer="22" curve="-90"/>
 </plain>
 <libraries>
 <library name="SparkFun-LED">
@@ -5308,7 +5316,7 @@ design rules under a new name.</description>
 <element name="C10" library="SparkFun-Capacitors" package="0603-CAP" value="100nF" x="20.955" y="17.78"/>
 <element name="C11" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="5.715" y="17.145" rot="R270"/>
 <element name="U$5" library="special" package="DRIL-2,5" value="" x="95.5" y="45.5"/>
-<element name="U$3" library="special" package="DRIL-2,5" value="" x="95.5" y="5.5"/>
+<element name="U$3" library="special" package="DRIL-2,5" value="" x="95.5" y="4.5"/>
 <element name="U$4" library="logo" package="RADIOACTIVE" value="" x="33.655" y="14.605" rot="MR90"/>
 <element name="JP4" library="pinhead" package="2X02" value="" x="30.48" y="43.18"/>
 <element name="CN2" library="Connector" package="B-SMD-5P" value="MICRO-USB-5P-340015001" x="2.54" y="39.37" rot="MR90"/>
