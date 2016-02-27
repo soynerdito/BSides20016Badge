@@ -166,7 +166,7 @@ E</text>
 <wire x1="92.71" y1="6.35" x2="92.71" y2="2.54" width="0.3048" layer="21"/>
 <wire x1="92.71" y1="2.54" x2="92.075" y2="1.905" width="0.3048" layer="21"/>
 <wire x1="92.075" y1="1.905" x2="37.385" y2="1.905" width="0.3048" layer="21"/>
-<text x="89.535" y="46.99" size="1.9304" layer="1" font="vector" align="top-right">BSIDES 2016</text>
+<text x="90.035" y="46.99" size="1.9304" layer="1" font="vector" align="top-right">BSidesPR 2016</text>
 <hole x="96.52" y="25" drill="4"/>
 <text x="22.2" y="6" size="1.016" layer="21" rot="SR225" align="top-right">NRST</text>
 <text x="25.2" y="6" size="1.016" layer="21" rot="SR225" align="top-right">SWDIO</text>
@@ -174,7 +174,7 @@ E</text>
 <text x="30.6" y="6" size="1.016" layer="21" rot="SR225" align="top-right">SWCLK</text>
 <text x="33.5" y="6" size="1.016" layer="21" rot="SR225" align="top-right">VCC</text>
 <rectangle x1="55.8" y1="45.6" x2="66" y2="48" layer="21"/>
-<text x="62.4" y="45" size="0.8128" layer="21" align="top-right">GND</text>
+<text x="62.4" y="45" size="1" layer="21" align="top-right">GND</text>
 <wire x1="100" y1="45.876896875" x2="100" y2="4.10365625" width="1.6764" layer="21"/>
 <wire x1="100" y1="4.10365625" x2="95.89634375" y2="0" width="1.6764" layer="21" curve="-90"/>
 <wire x1="95.89634375" y1="0" x2="4.024921875" y2="0" width="1.6764" layer="21"/>
@@ -191,9 +191,26 @@ E</text>
 <wire x1="0" y1="45.613659375" x2="4.386340625" y2="50" width="1.6764" layer="22" curve="-90"/>
 <wire x1="4.386340625" y1="50" x2="95.876896875" y2="50" width="1.6764" layer="22"/>
 <wire x1="95.876896875" y1="50" x2="100" y2="45.876896875" width="1.6764" layer="22" curve="-90"/>
-<text x="53" y="35.5" size="2.54" layer="25" rot="SR270">Security</text>
-<text x="49" y="34" size="3" layer="25" rot="SR270">BSIDES</text>
-<text x="46.5" y="30" size="1.778" layer="25" rot="SR270">Puerto Rico</text>
+<text x="58" y="37.5" size="3.81" layer="25" rot="SR270">Security</text>
+<text x="52" y="36" size="3.81" layer="25" rot="SR270">BSIDES</text>
+<text x="48.5" y="33.5" size="2.1844" layer="25" rot="SR270">Puerto Rico</text>
+<text x="40.5" y="41" size="1.778" layer="22" rot="MR0">PROG</text>
+<text x="34.5" y="33.5" size="1.778" layer="22" rot="MR180">RUN</text>
+<text x="10.5" y="13" size="1.778" layer="21">CH340G</text>
+<text x="27.5" y="27" size="1.778" layer="21" rot="SR270">STM32F0</text>
+<text x="6" y="2.5" size="2.1844" layer="22" rot="SMR90">To Program:
+1. Connect to PC
+2. Slide to PROG
+3. Press Reset</text>
+<wire x1="30.5" y1="44" x2="40.5" y2="44" width="0.4064" layer="22"/>
+<wire x1="40.5" y1="44" x2="42" y2="42.5" width="0.4064" layer="22" curve="-90"/>
+<wire x1="42" y1="42.5" x2="42" y2="32" width="0.4064" layer="22"/>
+<wire x1="42" y1="32" x2="41" y2="31" width="0.4064" layer="22" curve="-90"/>
+<wire x1="41" y1="31" x2="30" y2="31" width="0.4064" layer="22"/>
+<wire x1="30" y1="31" x2="29" y2="32" width="0.4064" layer="22" curve="-90"/>
+<wire x1="29" y1="32" x2="29" y2="42.5" width="0.4064" layer="22"/>
+<wire x1="29" y1="42.5" x2="30.5" y2="44" width="0.4064" layer="22" curve="-90"/>
+<text x="68.5" y="5.5" size="2.54" layer="22" rot="MR180">@BSidesPR</text>
 </plain>
 <libraries>
 <library name="SparkFun-LED">
@@ -4716,6 +4733,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
 </package>
+<package name="SWITCH-SPST-SMD-A">
+<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="3.35" y1="-1.3" x2="3.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="3.35" y1="1.3" x2="-0.1" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.3" x2="-1.4" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.3" x2="-3.35" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="1.3" x2="-0.1" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="2.8" x2="-1.4" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="2.8" x2="-1.4" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-3.35" y1="0.3" x2="-3.35" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="3.35" y1="0.3" x2="3.35" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="1.3" x2="-2.7" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="0" y2="-1.3" width="0.2032" layer="21"/>
+<smd name="1" x="-2.25" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="2" x="-0.75" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="3" x="2.25" y="-1.75" dx="0.7" dy="1.5" layer="1" rot="R180"/>
+<smd name="GND1" x="-3.65" y="1" dx="1" dy="0.6" layer="1"/>
+<smd name="GND2" x="-3.65" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<smd name="GND3" x="3.65" y="1" dx="1" dy="0.6" layer="1"/>
+<smd name="GND4" x="3.65" y="-1.1" dx="1" dy="0.8" layer="1"/>
+<text x="-1.27" y="0.635" size="0.6096" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.27" size="0.6096" layer="27">&gt;Value</text>
+<hole x="-1.5" y="0" drill="0.9"/>
+<hole x="1.5" y="0" drill="0.9"/>
+</package>
 </packages>
 </library>
 <library name="pinhead">
@@ -4833,39 +4876,6 @@ drill 2.5 mm'</description>
 <circle x="0" y="0" radius="3.175" width="0" layer="43"/>
 <circle x="0" y="0" radius="3.175" width="0" layer="41"/>
 <hole x="0" y="0" drill="2.5"/>
-</package>
-</packages>
-</library>
-<library name="logo">
-<description>&lt;b&gt;Electronic logos&lt;/b&gt;&lt;p&gt;</description>
-<packages>
-<package name="RADIOACTIVE">
-<description>&lt;b&gt;Logo: import from bit map with import-bmp.ulp&lt;/b&gt;</description>
-<wire x1="2" y1="0.7" x2="21" y2="0.7" width="1.4" layer="21"/>
-<wire x1="21" y1="0.7" x2="21.6" y2="2" width="1.4" layer="21" curve="130.449719"/>
-<wire x1="21.6" y1="2" x2="12.2" y2="18.4" width="1.4" layer="21"/>
-<wire x1="12.2" y1="18.4" x2="10.8" y2="18.4" width="1.4" layer="21" curve="120.362259"/>
-<wire x1="2" y1="0.7" x2="1.4" y2="2" width="1.4" layer="21" curve="-130.449719"/>
-<wire x1="1.4" y1="2" x2="10.8" y2="18.4" width="1.4" layer="21"/>
-<circle x="11.5" y="6.8" radius="0.9" width="0" layer="21"/>
-<polygon width="0.1" layer="21" spacing="0.7464">
-<vertex x="7.3" y="6.8" curve="-60.103651"/>
-<vertex x="9.4" y="10.45"/>
-<vertex x="10.8" y="8.125" curve="62.572984"/>
-<vertex x="10" y="6.8"/>
-</polygon>
-<polygon width="0.1" layer="21" spacing="0.7464">
-<vertex x="13.6" y="3.1626" curve="-60.103337"/>
-<vertex x="9.389" y="3.1563"/>
-<vertex x="10.7025" y="5.5312" curve="62.573836"/>
-<vertex x="12.25" y="5.5009"/>
-</polygon>
-<polygon width="0.1" layer="21" spacing="0.7464">
-<vertex x="13.6" y="10.4373" curve="-60.103737"/>
-<vertex x="15.7109" y="6.7936"/>
-<vertex x="12.9974" y="6.7437" curve="62.57438"/>
-<vertex x="12.25" y="8.099"/>
-</polygon>
 </package>
 </packages>
 </library>
@@ -5222,11 +5232,15 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.972" y="25.781" size="0.4064" layer="25" rot="R90"/>
 </element>
 <element name="R9" library="SparkFun-Passives" package="0603-RES" value="10k" x="24.13" y="39.87" rot="R90"/>
-<element name="PRG" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="SWITCH-MOMENTARY-2SMD-REDUNDANT" x="24.13" y="39.37" rot="MR270"/>
-<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="SWITCH-MOMENTARY-2SMD-REDUNDANT" x="24.13" y="27.305" rot="MR90"/>
+<element name="PRG" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="SWITCH-MOMENTARY-2SMD-REDUNDANT" x="24.13" y="39.37" smashed="yes" rot="MR270">
+<attribute name="NAME" x="20.852" y="42.759" size="2.1844" layer="26" rot="MR270"/>
+</element>
+<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-SMD" value="SWITCH-MOMENTARY-2SMD-REDUNDANT" x="24.13" y="27.305" smashed="yes" rot="MR90">
+<attribute name="NAME" x="18.408" y="22.916" size="2.1844" layer="26" rot="MR90"/>
+</element>
 <element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="22pF" x="27.94" y="30.48" rot="R270"/>
 <element name="ST-LINK" library="pinhead" package="1X05" value="" x="27.94" y="3.81" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.9562" y="4.0612" size="1.27" layer="25" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="20.4562" y="3.5612" size="1.27" layer="25" ratio="10" rot="SR180"/>
 <attribute name="VALUE" x="34.29" y="6.985" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U1" library="digital-ic" package="SOT23-6" value="USBLC6SOT-23" x="9.525" y="19.05" rot="R180"/>
@@ -5236,12 +5250,12 @@ design rules under a new name.</description>
 <element name="C11" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="5.715" y="17.145" rot="R270"/>
 <element name="U$5" library="special" package="DRIL-2,5" value="" x="95.5" y="45.5"/>
 <element name="U$3" library="special" package="DRIL-2,5" value="" x="95.5" y="4.5"/>
-<element name="U$4" library="logo" package="RADIOACTIVE" value="" x="33.655" y="14.605" rot="MR90"/>
 <element name="CN2" library="Connector" package="B-SMD-5P" value="MICRO-USB-5P-340015001" x="2.54" y="39.37" rot="MR90"/>
 <element name="PROTO" library="pinhead" package="1X05" value="" x="96.6" y="34.8" rot="R270"/>
 <element name="PROTO1" library="pinhead" package="1X05" value="" x="96.6" y="15.6" rot="R270"/>
 <element name="U$1" library="digital-ic" package="OBSIDISLOGO_BOTTOM" value="" x="51.6" y="42.6" rot="R270"/>
 <element name="U$6" library="digital-ic" package="SOP-8" value="AT93C66A" x="31.8" y="44.4"/>
+<element name="S1" library="SparkFun-Electromechanical" package="SWITCH-SPST-SMD-A" value="" x="31.5" y="37.5" rot="MR90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -5315,7 +5329,7 @@ design rules under a new name.</description>
 <contactref element="UP" pad="4"/>
 <via x="43.8" y="46.8" extent="1-16" drill="0.6"/>
 <contactref element="U$6" pad="PIN5"/>
-<via x="35.5" y="41.5" extent="1-16" drill="0.6"/>
+<via x="34.5" y="41.5" extent="1-16" drill="0.6"/>
 <via x="30" y="30.5" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="VCC">
@@ -5412,6 +5426,13 @@ design rules under a new name.</description>
 <wire x1="34.53" y1="43.5" x2="34.3" y2="43.73" width="0.4064" layer="1"/>
 <wire x1="34.3" y1="46.4" x2="35.1" y2="46.4" width="0.4064" layer="1"/>
 <wire x1="35.1" y1="46.4" x2="37.15" y2="44.35" width="0.4064" layer="1"/>
+<contactref element="S1" pad="3"/>
+<wire x1="29.75" y1="39.75" x2="29.25" y2="39.75" width="0.4064" layer="16"/>
+<wire x1="29.25" y1="39.75" x2="27.5" y2="41.5" width="0.4064" layer="16"/>
+<wire x1="27.5" y1="41.5" x2="27.5" y2="43.5" width="0.4064" layer="16"/>
+<wire x1="27.5" y1="43.5" x2="26.5" y2="44.5" width="0.4064" layer="16"/>
+<wire x1="26.5" y1="44.5" x2="22.175" y2="44.5" width="0.4064" layer="16"/>
+<wire x1="22.175" y1="44.5" x2="22.125" y2="44.45" width="0.4064" layer="16"/>
 </signal>
 <signal name="C0">
 <contactref element="D1" pad="A"/>
@@ -6391,6 +6412,9 @@ design rules under a new name.</description>
 <wire x1="26.035" y1="42.164" x2="26.035" y2="42.18" width="0.3048" layer="16"/>
 <wire x1="26.035" y1="42.18" x2="24.9" y2="42.45" width="0.3048" layer="16"/>
 <wire x1="24.9" y1="42.45" x2="24.13" y2="42.95" width="0.3048" layer="16"/>
+<contactref element="S1" pad="2"/>
+<wire x1="29.75" y1="36.75" x2="26.209" y2="36.75" width="0.4064" layer="16"/>
+<wire x1="26.209" y1="36.75" x2="26.035" y2="36.576" width="0.4064" layer="16"/>
 </signal>
 <signal name="NRST">
 <contactref element="IC1" pad="4"/>
@@ -6471,8 +6495,8 @@ design rules under a new name.</description>
 <wire x1="20.585" y1="30.8578" x2="20.585" y2="33.585" width="0.3048" layer="1"/>
 <wire x1="20.585" y1="33.585" x2="23.5" y2="36.5" width="0.3048" layer="1"/>
 <wire x1="23.5" y1="36.5" x2="27.5" y2="36.5" width="0.3048" layer="1"/>
-<wire x1="27.5" y1="36.5" x2="31.5" y2="40.5" width="0.3048" layer="1"/>
-<wire x1="31.5" y1="40.5" x2="31.5" y2="44.5" width="0.3048" layer="1"/>
+<wire x1="27.5" y1="36.5" x2="31.5" y2="42.5" width="0.3048" layer="1"/>
+<wire x1="31.5" y1="42.5" x2="31.5" y2="44.5" width="0.3048" layer="1"/>
 <wire x1="31.5" y1="44.5" x2="30.7" y2="46" width="0.3048" layer="1"/>
 <wire x1="30.7" y1="46" x2="29.3" y2="46.4" width="0.3048" layer="1"/>
 </signal>
