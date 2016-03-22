@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5257,7 +5257,7 @@ GND   PB0</text>
 <instance part="IC1" gate="G$1" x="35.56" y="71.12"/>
 <instance part="R1" gate="G$1" x="7.62" y="68.58"/>
 <instance part="R2" gate="G$1" x="7.62" y="63.5"/>
-<instance part="R3" gate="G$1" x="-2.54" y="73.66" rot="R90"/>
+<instance part="R3" gate="G$1" x="-10.16" y="73.66" rot="R90"/>
 <instance part="D1" gate="1" x="-2.54" y="58.42" rot="R90"/>
 <instance part="D2" gate="1" x="-10.16" y="58.42" rot="R90"/>
 <instance part="GND1" gate="1" x="-2.54" y="48.26"/>
@@ -5291,15 +5291,14 @@ GND   PB0</text>
 <nets>
 <net name="PB1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB1_MISO"/>
-<wire x1="43.18" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="68.58" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="60.96" x2="15.24" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
 <label x="43.18" y="68.58" size="1.778" layer="95"/>
+<wire x1="12.7" y1="68.58" x2="15.24" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="68.58" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PB3_CLKI"/>
+<wire x1="27.94" y1="71.12" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
+<label x="22.86" y="71.12" size="1.778" layer="95"/>
+<wire x1="17.78" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
@@ -5310,15 +5309,12 @@ GND   PB0</text>
 </net>
 <net name="PB2" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB2SCK"/>
-<wire x1="43.18" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="71.12" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="66.04" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="58.42" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
 <label x="43.18" y="71.12" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PB4_CLKO"/>
+<wire x1="27.94" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<label x="22.86" y="68.58" size="1.778" layer="95"/>
+<wire x1="12.7" y1="63.5" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="2"/>
@@ -5327,7 +5323,7 @@ GND   PB0</text>
 <label x="88.9" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="DPLUS" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="D1" gate="1" pin="C"/>
@@ -5338,26 +5334,25 @@ GND   PB0</text>
 <junction x="-2.54" y="63.5"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="DMIN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="68.58" x2="-2.54" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="68.58" x2="-10.16" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="-2.54" y1="68.58" x2="-10.16" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="68.58" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="68.58" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="68.58" x2="-25.4" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="D-"/>
 <wire x1="-25.4" y1="66.04" x2="-30.48" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-10.16" y="68.58"/>
-<junction x="-2.54" y="68.58"/>
+<junction x="-10.16" y="68.58"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="78.74" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="78.74" x2="-2.54" y2="83.82" width="0.1524" layer="91"/>
 <label x="-5.08" y="83.82" size="1.778" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="VBUS"/>
 <wire x1="-30.48" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
@@ -5498,11 +5493,6 @@ GND   PB0</text>
 </net>
 <net name="PB3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB3_CLKI"/>
-<wire x1="27.94" y1="71.12" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
-<label x="22.86" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PB3" gate="G$1" pin="A"/>
 <wire x1="38.1" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <label x="40.64" y="111.76" size="1.778" layer="95"/>
@@ -5514,11 +5504,6 @@ GND   PB0</text>
 </segment>
 </net>
 <net name="PB4" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB4_CLKO"/>
-<wire x1="27.94" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<label x="22.86" y="68.58" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="JP4" gate="A" pin="3"/>
 <wire x1="101.6" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
