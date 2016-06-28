@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2697,27 +2697,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="22UF-6.3V-20%(0805)" prefix="C" uservalue="yes">
-<description>CAP-08402&lt;BR&gt;
-Ceramic&lt;BR&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08402"/>
-<attribute name="VALUE" value="22uF" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -5660,15 +5639,12 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="IC2" library="burr-brown" deviceset="REG1117" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="22UF-6.3V-20%(0805)" device="" value="10uf"/>
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value=".1uf"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="22UF-6.3V-20%(0805)" device="" value="10uf"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value=".1uf"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="digital-ic" deviceset="STM32F0*" device="P"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49U70" value="8MHz"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="22pF"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="22pF"/>
@@ -5707,6 +5683,9 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="BATTERY" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10uf"/>
+<part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="10uf"/>
 </parts>
 <sheets>
 <sheet>
@@ -5825,15 +5804,12 @@ CONNECTOR</text>
 <instance part="IC2" gate="G$1" x="259.08" y="233.68"/>
 <instance part="GND5" gate="1" x="233.68" y="218.44"/>
 <instance part="GND20" gate="1" x="274.32" y="218.44"/>
-<instance part="C4" gate="G$1" x="233.68" y="226.06"/>
 <instance part="C5" gate="G$1" x="243.84" y="226.06"/>
-<instance part="C6" gate="G$1" x="274.32" y="226.06"/>
 <instance part="C7" gate="G$1" x="284.48" y="226.06"/>
 <instance part="GND3" gate="1" x="243.84" y="218.44"/>
 <instance part="GND4" gate="1" x="284.48" y="218.44"/>
 <instance part="IC1" gate="G$1" x="381" y="279.4"/>
 <instance part="SUPPLY5" gate="GND" x="436.88" y="226.06"/>
-<instance part="SUPPLY6" gate="GND" x="439.42" y="264.16"/>
 <instance part="Q2" gate="G$1" x="342.9" y="294.64"/>
 <instance part="C8" gate="G$1" x="337.82" y="287.02"/>
 <instance part="C9" gate="G$1" x="350.52" y="287.02"/>
@@ -5888,6 +5864,9 @@ CONNECTOR</text>
 <instance part="SUPPLY10" gate="GND" x="416.56" y="165.1" rot="R90"/>
 <instance part="BATTERY" gate="G$1" x="381" y="325.12"/>
 <instance part="SUPPLY11" gate="GND" x="368.3" y="320.04"/>
+<instance part="GND2" gate="1" x="441.96" y="264.16"/>
+<instance part="C6" gate="G$1" x="274.32" y="226.06"/>
+<instance part="C4" gate="G$1" x="233.68" y="226.06"/>
 </instances>
 <busses>
 </busses>
@@ -6643,14 +6622,9 @@ CONNECTOR</text>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="GND"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="259.08" y1="220.98" x2="259.08" y2="218.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="233.68" y1="223.52" x2="233.68" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -6658,9 +6632,9 @@ CONNECTOR</text>
 <wire x1="243.84" y1="223.52" x2="243.84" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="274.32" y1="223.52" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -6681,15 +6655,6 @@ CONNECTOR</text>
 <wire x1="444.5" y1="233.68" x2="444.5" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="444.5" y1="228.6" x2="436.88" y2="228.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<pinref part="COLUMNS" gate="A" pin="GND"/>
-<pinref part="COLUMNS" gate="A" pin="G"/>
-<wire x1="441.96" y1="271.78" x2="439.42" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="269.24" x2="439.42" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="266.7" x2="441.96" y2="266.7" width="0.1524" layer="91"/>
-<junction x="439.42" y="266.7"/>
 </segment>
 <segment>
 <pinref part="DOWN" gate="G$1" pin="2"/>
@@ -6773,6 +6738,19 @@ CONNECTOR</text>
 <junction x="368.3" y="322.58"/>
 <junction x="378.46" y="325.12"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="259.08" y1="218.44" x2="259.08" y2="220.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="COLUMNS" gate="A" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="COLUMNS" gate="A" pin="G"/>
+<wire x1="441.96" y1="271.78" x2="441.96" y2="266.7" width="0.1524" layer="91"/>
+<junction x="441.96" y="271.78"/>
+<junction x="441.96" y="266.7"/>
+</segment>
 </net>
 <net name="DPLUS" class="0">
 <segment>
@@ -6820,7 +6798,6 @@ CONNECTOR</text>
 <pinref part="IC2" gate="G$1" pin="VIN"/>
 <label x="228.6" y="236.22" size="1.778" layer="95"/>
 <wire x1="228.6" y1="233.68" x2="233.68" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="233.68" x2="243.84" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="233.68" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="231.14" x2="233.68" y2="233.68" width="0.1524" layer="91"/>
@@ -6828,6 +6805,7 @@ CONNECTOR</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="231.14" x2="243.84" y2="233.68" width="0.1524" layer="91"/>
 <junction x="243.84" y="233.68"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="411.48" y1="195.58" x2="403.86" y2="195.58" width="0.1524" layer="91"/>
@@ -6907,10 +6885,10 @@ CONNECTOR</text>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="284.48" y1="231.14" x2="284.48" y2="233.68" width="0.1524" layer="91"/>
 <junction x="284.48" y="233.68"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="231.14" x2="274.32" y2="233.68" width="0.1524" layer="91"/>
 <junction x="274.32" y="233.68"/>
 <label x="289.56" y="236.22" size="1.778" layer="95"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <label x="477.52" y="193.04" size="1.778" layer="95"/>
